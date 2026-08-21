@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAP Index 财商测试 — 免费了解你的投资人格</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+:root {
+  --color-bg: #f7f5f2;
+  --color-surface: #ffffff;
+  --color-ink: #1a1a1a;
+  --color-ink-muted: #555;
+  --color-ink-subtle: #888;
+  --color-divider: #e2ddd6;
+  --color-accent: #2d6a4f;
+  --color-accent-light: #d8f3dc;
+  --color-accent-ink: #ffffff;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-size-base: 16px;
+  --line-height-body: 1.7;
+  --content-max: 920px;
+  --radius: 6px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+}
+html { font-size: var(--font-size-base); }
+body { margin: 0; padding: 0; background: var(--color-bg); color: var(--color-ink); font-family: var(--font-body); line-height: var(--line-height-body); -webkit-font-smoothing: antialiased; }
+.page-header { background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%); color: var(--color-accent-ink); padding: 3rem 1.5rem 2.5rem; text-align: center; }
+.page-header h1 { margin: 0 0 0.5rem; font-size: 1.8rem; font-weight: 800; }
+.page-header p { margin: 0 auto; max-width: 680px; opacity: 0.88; font-size: 1rem; }
+.badge-free { display: inline-block; background: #ff6b35; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 3px; margin-bottom: 0.75rem; }
+.content-wrap { max-width: var(--content-max); margin: 0 auto; padding: 2rem 1.5rem 3rem; }
+.card { background: var(--color-surface); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 1.75rem; margin-bottom: 1.5rem; }
+.card h2 { font-size: 1.2rem; font-weight: 700; color: var(--color-accent); border-bottom: 2px solid var(--color-accent-light); padding-bottom: 0.5rem; margin: 0 0 1rem; }
+.card p { margin: 0 0 0.75rem; }
+.card ul { padding-left: 1.25rem; margin: 0 0 0.75rem; }
+.card li { margin-bottom: 0.4rem; }
+.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0; }
+.feature-item { background: var(--color-accent-light); border-radius: var(--radius); padding: 1.25rem; text-align: center; }
+.feature-item .icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.feature-item h4 { margin: 0 0 0.25rem; font-size: 0.95rem; }
+.feature-item p { margin: 0; font-size: 0.85rem; color: var(--color-ink-muted); }
+.highlight-box { background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%); color: #fff; border-radius: var(--radius); padding: 2rem; text-align: center; margin-bottom: 1.5rem; }
+.highlight-box h2 { color: #fff; border-bottom: none; margin-bottom: 0.5rem; }
+.highlight-box .cta-btn { display: inline-block; background: #ff6b35; color: #fff; padding: 0.8rem 2rem; border-radius: var(--radius); font-weight: 700; font-size: 1.05rem; text-decoration: none; margin-top: 0.5rem; }
+.footer-cta { background: var(--color-accent); color: var(--color-accent-ink); border-radius: var(--radius); padding: 2rem; text-align: center; margin-bottom: 2rem; }
+.footer-cta h3 { margin: 0 0 0.5rem; font-size: 1.15rem; font-weight: 700; color: inherit; }
+.footer-cta p { margin: 0; opacity: 0.88; font-size: 0.95rem; }
+.contact-section { background: var(--color-surface); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 2rem; margin-bottom: 2rem; text-align: center; }
+.contact-section h3 { font-size: 1.1rem; font-weight: 700; color: var(--color-accent); margin: 0 0 1rem; }
+.contact-section .contact-items { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; font-size: 0.95rem; }
+.contact-section .contact-item { display: flex; align-items: center; gap: 0.4rem; }
+.contact-section .contact-item .contact-label { color: var(--color-ink-muted); font-size: 0.85rem; }
+.contact-section .contact-item .contact-value { font-weight: 600; }
+.disclaimer { font-size: 0.8rem; color: var(--color-ink-subtle); text-align: center; line-height: 1.6; padding-bottom: 2rem; }
+@media (max-width: 700px) { .content-wrap { padding: 1.25rem 1rem; } .card { padding: 1.25rem; } .contact-section .contact-items { flex-direction: column; gap: 0.75rem; } .feature-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header class="page-header">
+  <span class="badge-free">🆓 免费测试</span>
+  <h1>GAP Index 财商测试</h1>
+  <p>Global Assessment of Proficiency — 免费了解你的投资人格与财务健康度，找到最适合你的投资方向</p>
+</header>
+<main>
+<div class="content-wrap">
+  <div class="card">
+    <h2>什么是 GAP Index？</h2>
+    <p>GAP Index（Global Assessment of Proficiency）是一项专业的<strong>个人财商评估工具</strong>，帮助你全面了解自己在财务管理、投资决策和风险认知方面的真实水平。</p>
+    <p>通过 20 道精心设计的题目，GAP Index 会在 5 分钟内帮你完成以下分析：</p>
+    <ul>
+      <li><strong>财务健康度评估</strong> — 了解你当前的财务状况处于什么阶段</li>
+      <li><strong>投资人格画像</strong> — 你是稳健型、平衡型还是进取型投资者？</li>
+      <li><strong>风险偏好分析</strong> — 你真正能承受多大风险？心理和实际是否匹配？</li>
+      <li><strong>财商短板诊断</strong> — 哪些方面需要提升，避免踩坑</li>
+      <li><strong>个性化建议</strong> — 基于你的测试结果，给出适合你的投资方向建议</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>为什么你应该做这个测试？</h2>
+    <p>很多投资亏损，不是因为市场不好，而是因为<strong>不了解自己</strong>：</p>
+    <ul>
+      <li>明明风险承受能力有限，却追高买了高波动产品</li>
+      <li>明明适合长期持有，却频繁进出导致亏损</li>
+      <li>明明应该多元化配置，却把所有资金放在一个篮子里</li>
+      <li>明明对某个领域一知半解，却盲目自信投入重资</li>
+    </ul>
+    <p>GAP Index 帮你建立<strong>清晰的自我认知</strong>，让你的投资决策更有底气。</p>
+  </div>
+  <div class="feature-grid">
+    <div class="feature-item"><div class="icon">⏱️</div><h4>5 分钟完成</h4><p>20 道精选题目，快速高效</p></div>
+    <div class="feature-item"><div class="icon">🆓</div><h4>完全免费</h4><p>无需付费，无隐藏费用</p></div>
+    <div class="feature-item"><div class="icon">🔒</div><h4>隐私保护</h4><p>数据加密，绝不泄露</p></div>
+    <div class="feature-item"><div class="icon">📊</div><h4>专业分析</h4><p>基于行为金融学研究</p></div>
+  </div>
+  <div class="highlight-box">
+    <h2>🎯 立即免费测试</h2>
+    <p>5 分钟了解你的投资人格，找到最适合你的投资方向</p>
+    <a href="https://gapindex.com" class="cta-btn" target="_blank">开始测试 →</a>
+  </div>
+  <div class="card">
+    <h2>适合谁做这个测试？</h2>
+    <ul>
+      <li><strong>投资新手</strong> — 刚开始接触投资，想了解自己适合什么类型</li>
+      <li><strong>有投资经验但亏损的人</strong> — 想知道自己亏在哪里，如何改进</li>
+      <li><strong>准备做重大投资决策的人</strong> — 买房、买基金前，先了解自己</li>
+      <li><strong>想提升财商的人</strong> — 财商不是天生的，是可以后天培养的</li>
+      <li><strong>家庭财务决策者</strong> — 帮全家人了解各自的财商水平</li>
+    </ul>
+  </div>
+  <div class="footer-cta">
+    <h3>做完测试想了解更多？</h3>
+    <p>私信我「财商测试」，获取详细解读和个性化投资建议</p>
+  </div>
+  <div class="contact-section">
+    <h3>联系我们</h3>
+    <div class="contact-items">
+      <div class="contact-item"><span class="contact-label">微信：</span><span class="contact-value">LIGCLUB</span></div>
+      <div class="contact-item"><span class="contact-label">邮箱：</span><span class="contact-value">emarkts101@outlook.com</span></div>
+      <div class="contact-item"><span class="contact-label">电话：</span><span class="contact-value">+61415431161</span></div>
+    </div>
+  </div>
+  <div class="disclaimer"><p>GAP Index 测试结果为参考性质，不构成个人财务建议。投资涉及风险，请结合自身情况做出决策。<br>© 2026</p></div>
+</div>
+</main>
+</body>
+</html>

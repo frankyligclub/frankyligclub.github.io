@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商业地产抵押债权投资基金 — 稳健收益投资方案推荐</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --color-bg: #f7f5f2;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f0ede8;
+  --color-ink: #1a1a1a;
+  --color-ink-muted: #555;
+  --color-ink-subtle: #888;
+  --color-divider: #e2ddd6;
+  --color-accent: #1b4d3e;
+  --color-accent-light: #e8f0ed;
+  --color-accent-ink: #ffffff;
+  --color-warn: #b8860b;
+  --color-warn-bg: #fdf8ec;
+  --color-info-bg: #eef5f2;
+  --color-hybrid: #5a3d7a;
+  --color-hybrid-light: #eee8f5;
+  --color-hybrid-bg: #f5f0fa;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-size-base: 16px;
+  --line-height-body: 1.7;
+  --content-max: 920px;
+  --radius: 6px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+html { font-size: var(--font-size-base); }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: var(--line-height-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-header {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.page-header p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.82;
+  max-width: 580px;
+  margin-inline: auto;
+}
+
+.page-header .rec-label {
+  display: inline-block;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 3px;
+  padding: 0.2rem 0.7rem;
+  margin-bottom: 1rem;
+  opacity: 0.75;
+}
+
+.content-wrap {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-divider);
+}
+
+.card h2:first-child { margin-top: 0; }
+
+.card p { margin: 0 0 1rem; }
+.card ul, .card ol { margin: 0 0 1.25rem; padding-left: 1.5rem; }
+.card li { margin-bottom: 0.5rem; }
+.card li strong { color: var(--color-ink); }
+
+.key-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.metric-item {
+  background: var(--color-surface-alt);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.metric-item .value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  margin-bottom: 0.25rem;
+}
+
+.metric-item .label {
+  font-size: 0.82rem;
+  color: var(--color-ink-muted);
+}
+
+.callout {
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.callout-info {
+  background: var(--color-info-bg);
+  border-left: 4px solid var(--color-accent);
+}
+
+.callout-warn {
+  background: var(--color-warn-bg);
+  border-left: 4px solid var(--color-warn);
+}
+
+.callout .callout-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.callout p { margin: 0; font-size: 0.92rem; }
+
+/* 子产品对比区域 */
+.sub-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.sub-product {
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  position: relative;
+}
+
+.sub-product-fm {
+  background: var(--color-accent-light);
+  border: 1px solid #c8ddd5;
+}
+
+.sub-product-hybrid {
+  background: var(--color-hybrid-bg);
+  border: 1px solid #d4c8e2;
+}
+
+.sub-product .sp-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
+}
+
+.sub-product-fm .sp-tag {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.sub-product-hybrid .sp-tag {
+  background: var(--color-hybrid);
+  color: #fff;
+}
+
+.sub-product h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.sub-product-fm h4 { color: var(--color-accent); }
+.sub-product-hybrid h4 { color: var(--color-hybrid); }
+
+.sub-product p {
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+}
+
+.sub-product ul {
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.sub-product li {
+  margin-bottom: 0.35rem;
+}
+
+.sub-product .sp-metric {
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+/* 对比表格 */
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.92rem;
+}
+
+table.data-table th,
+table.data-table td {
+  padding: 0.65rem 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+table.data-table th {
+  background: var(--color-surface-alt);
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--color-ink-muted);
+  letter-spacing: 0.04em;
+}
+
+table.data-table td:last-child {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+}
+
+.audience-box {
+  background: var(--color-surface-alt);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0;
+}
+
+.audience-box .audience-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-accent);
+}
+
+.risk-list {
+  list-style: none;
+  padding: 0;
+}
+
+.risk-list li {
+  padding: 0.6rem 0 0.6rem 1.8rem;
+  position: relative;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.risk-list li:last-child { border-bottom: none; }
+
+.risk-list li::before {
+  content: "⚠";
+  position: absolute;
+  left: 0;
+  color: var(--color-warn);
+  font-size: 0.9rem;
+}
+
+.footer-cta {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-cta h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: inherit;
+}
+
+.footer-cta p {
+  margin: 0;
+  opacity: 0.88;
+  font-size: 0.95rem;
+}
+
+.contact-section {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-section h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 0 0 1rem;
+}
+
+.contact-section .contact-items {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+.contact-section .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.contact-section .contact-item .contact-label {
+  color: var(--color-ink-muted);
+  font-size: 0.85rem;
+}
+
+.contact-section .contact-item .contact-value {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: var(--color-ink-subtle);
+  text-align: center;
+  line-height: 1.6;
+  padding-bottom: 2rem;
+}
+
+@media print {
+  body { background: #fff; }
+  .page-header { background: none; color: var(--color-ink); border-bottom: 2px solid var(--color-accent); }
+  .card { box-shadow: none; border: 1px solid var(--color-divider); break-inside: avoid; }
+  .sub-products { grid-template-columns: 1fr; }
+  .footer-cta { background: none; color: var(--color-ink); border: 1px solid var(--color-accent); }
+}
+
+@media (max-width: 700px) {
+  .sub-products { grid-template-columns: 1fr; }
+  .content-wrap { padding: 1.25rem 1rem; }
+  .card { padding: 1.25rem; }
+  .key-metrics { grid-template-columns: 1fr 1fr; }
+  .contact-section .contact-items { flex-direction: column; gap: 0.75rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <span class="rec-label">投资推荐</span>
+  <h1>商业地产抵押债权投资基金</h1>
+  <p>Commercial Real Estate Private Credit Fund — 以澳洲和新西兰商业地产抵押债权投资为核心的稳健收益方案，适合追求高于存款回报且风险可控的投资者</p>
+</header>
+
+<main>
+<div class="content-wrap">
+
+  <!-- 产品概述 -->
+  <div class="card">
+    <h2>产品概述</h2>
+    <p>商业地产抵押债权投资基金是一只专注于澳洲和新西兰商业地产抵押债权投资的投资基金。基金将投资人的资金汇集后，以<strong>抵押贷款</strong>的形式向澳洲和新西兰商业地产项目发放贷款，投资人通过持有基金份额获得稳定的月度分红回报。</p>
+    <p>截至 <strong>2026 年 6 月 30 日</strong>，基金已实现<strong>年化净回报 9.13% 和 11.19%</strong>，持续优于现金利率及多数同类产品。基金目前规模约<strong>十亿级澳元</strong>，由国际顶级资管集团提供战略支持，兼具专业管理与机构级风控。</p>
+    <p>基金下设两个子产品，分别面向不同风险偏好的投资者。两个子基金的历史回报均为 <strong>9.85%</strong>，在抵押结构、回报水平和风险等级上有明显区别，投资人可根据自身风险承受能力选择适合的产品。</p>
+
+    <div class="key-metrics">
+      <div class="metric-item">
+        <span class="value">9.13%–11.19%</span>
+        <span class="label">年化净回报<br>（截至2026年6月30日）</span>
+      </div>
+      <div class="metric-item">
+        <span class="value">每月</span>
+        <span class="label">分红派息<br>现金流稳定</span>
+      </div>
+      <div class="metric-item">
+        <span class="value">每月可赎回</span>
+        <span class="label">流动性好<br>资金灵活</span>
+      </div>
+      <div class="metric-item">
+        <span class="value">$50万</span>
+        <span class="label">最低投资额<br>（Wholesale Investor）</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 两个子产品对比 -->
+  <div class="card">
+    <h2>两个子产品：First Mortgage 与 High Yield</h2>
+    <p>基金下设两个不同的子产品，虽然都投资于商业地产抵押债权，但抵押结构、回报水平和风险特征有明显区别。以下对比帮助您快速了解两者的核心差异：</p>
+
+    <div class="sub-products">
+      <div class="sub-product sub-product-fm">
+        <span class="sp-tag">稳健型</span>
+        <h3>First Mortgage</h3>
+        <p>纯第一顺位抵押贷款</p>
+        <ul>
+          <li>仅持有第一顺位抵押权</li>
+          <li>借款方违约时，<strong>最先获得偿还</strong></li>
+          <li>目标 LVR：<span class="sp-metric">65–70%</span></li>
+          <li>回报相对稳健，波动较小</li>
+          <li>100% 浮动利率，对冲通胀</li>
+          <li>目标回报：RBA 现金利率 + 5% p.a.</li>
+        </ul>
+      </div>
+      <div class="sub-product sub-product-hybrid">
+        <span class="sp-tag">高收益型</span>
+        <h3>High Yield 高收益</h3>
+        <p>高收益抵押债权产品</p>
+        <ul>
+          <li>至少持有 <strong>50%</strong> 第一抵押投资项目</li>
+          <li>其余部分配置多元化债权资产，<strong>收益更高</strong></li>
+          <li>回报潜力更高，适合愿意承担额外风险的投资者</li>
+          <li>浮动利率，对冲通胀</li>
+          <li>通过多元化配置获取超额收益</li>
+          <li>目标年化净回报（费后）：RBA 现金利率 + 8.00% p.a.</li>
+        </ul>
+      </div>
+    </div>
+
+    <table class="data-table">
+      <caption style="caption-side:top; text-align:left; font-size:0.88rem; color:var(--color-ink-muted); padding-bottom:0.5rem;">两个子产品关键指标对比</caption>
+      <thead>
+        <tr>
+          <th scope="col">对比维度</th>
+          <th scope="col" style="text-align:center">First Mortgage</th>
+          <th style="text-align:center">High Yield 高收益</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>抵押结构</td>
+          <td style="text-align:center">仅第一顺位</td>
+          <td style="text-align:center">至少 50% 第一抵押 + 多元化债权</td>
+        </tr>
+        <tr>
+          <td>风险等级</td>
+          <td style="text-align:center">较低</td>
+          <td style="text-align:center">中等偏高</td>
+        </tr>
+        <tr>
+          <td>目标年化净回报（费后）</td>
+          <td style="text-align:center">RBA + 5.00%</td>
+          <td style="text-align:center">RBA + 8.00%</td>
+        </tr>
+        <tr>
+          <td>受偿优先级</td>
+          <td style="text-align:center">最高（第一顺位）</td>
+          <td style="text-align:center">至少 50% 属于第一抵押</td>
+        </tr>
+        <tr>
+          <td>利率类型</td>
+          <td style="text-align:center">100% 浮动</td>
+          <td style="text-align:center">浮动</td>
+        </tr>
+        <tr>
+          <td>适合投资者</td>
+          <td style="text-align:center">风险厌恶型，追求稳健现金流</td>
+          <td style="text-align:center">愿意承担额外风险以换取更高回报</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout callout-info">
+      <div class="callout-title">💡 如何选择？</div>
+      <p>如果您更看重本金安全和稳定分红，<strong>First Mortgage</strong> 子产品是更稳妥的选择。如果您愿意接受稍高的风险以获取更高回报，<strong>High Yield 高收益</strong> 子产品可能更适合您。两个产品都支持每月分红和每月赎回。如果您持有美金，可考虑<strong>美金分红基金</strong>，直接用美元认购，省去换汇成本。</p>
+    </div>
+  </div>
+
+  <!-- 核心优势 -->
+  <div class="card">
+    <h2>核心优势</h2>
+
+    <div class="callout callout-info" style="background:#fdf8ec; border-left-color:#b8860b; margin-bottom:1.5rem;">
+      <div class="callout-title">🏆 2026 全澳州财富管理最佳地产类基金</div>
+      <p>本基金荣获 <strong>2026 年全澳州财富管理最佳地产类基金</strong> 荣誉，充分体现了基金在投资策略、风险管理和投资者回报方面的卓越表现。</p>
+    </div>
+
+    <ul>
+      <li><strong>浮动利率，天然抗通胀</strong> — 100% 采用浮动利率贷款，当央行加息时收益率同步上升，不必担心通胀侵蚀回报。</li>
+      <li><strong>每月分红，现金流可预期</strong> — 投资人每月收到分红，非常适合需要稳定现金流的退休人士或依靠投资收入的家庭。</li>
+      <li><strong>每月可赎回，流动性好</strong> — 不同于多数固定期限的固定收益产品，本基金支持每月赎回，资金灵活性极高。</li>
+      <li><strong>抵押充足，安全边际好</strong> — First Mortgage 子产品目标 LVR 仅 65%–70%，意味着每 100 万贷款背后有约 143 万的资产作为抵押。</li>
+      <li><strong>与股市低相关，分散风险利器</strong> — 本基金表现与股票市场的相关性极低，是股票、房产等传统资产之外优秀的组合分散化工具。</li>
+      <li><strong>目标回报清晰</strong> — First Mortgage 子产品目标为 RBA 现金利率 + 5.00% p.a.，High Yield 高收益子产品目标为 RBA 现金利率 + 8.00% p.a.（均为费后），投资人可以清楚地预期回报水平。</li>
+    </ul>
+
+    <div class="callout callout-info" style="background:#eef5f2; border-left-color:#1b6b4f;">
+      <div class="callout-title">🌏 海外投资人专属优势 — 美元直投 + 免CGT + 优惠税率</div>
+      <p>本基金对中国大陆及海外华人投资者特别友好，提供三大独特优势：</p>
+      <ul style="margin:0.5rem 0 0; padding-left:1.2rem;">
+        <li><strong>非澳居民免征资本增值税（CGT Exemption）</strong> — 本基金的投资标的是商业地产抵押债权（债务工具），而非直接持有澳洲土地或房产权益。根据澳洲税法，非澳居民投资者通过此类基金获得的回报<strong>不触发资本增值税（CGT）</strong>。对比：如果直接在澳洲购买投资房，出售时需要缴纳 CGT（税率可达净收益的 25%–50%）；但通过本基金投资，利息和分红回报完全免征 CGT，这是海外投资者最大的税务优势之一。</li>
+        <li><strong>接受美元（USD）直接投资</strong> — 无需兑换澳元，可直接使用美元认购基金份额。省去换汇成本和汇率波动风险，资金进出更便捷，对于持有美元资产或美元收入的投资者尤其方便。</li>
+        <li><strong>非澳居民享受优惠预扣税率</strong> — 根据澳洲与多国签订的避免双重征税协定（DTA），非澳居民投资人在满足条件时可申请优惠预扣税率（withholding tax），实际税负可能显著低于名义税率。基金回报以利息/分红形式发放，税务处理清晰透明。</li>
+      </ul>
+      <p style="margin-top:0.75rem"><strong>一句话总结：</strong>用美元就能投资澳洲和新西兰优质商业地产资产，回报免征资本增值税，还享受潜在的低预扣税率——对于希望在全球范围内分散配置资产的海外华人投资者，这是目前市面上税务效率最高的澳洲投资渠道之一。</p>
+    </div>
+  </div>
+
+  <!-- 费用结构 -->
+  <div class="card">
+    <h2>费用结构</h2>
+    <table class="data-table">
+      <caption style="caption-side:top; text-align:left; font-size:0.88rem; color:var(--color-ink-muted); padding-bottom:0.5rem;">基金费用透明，无隐藏收费</caption>
+      <thead>
+        <tr>
+          <th scope="col">费用类型</th>
+          <th style="text-align:right">费率</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>管理费（Management Fee）— First Mortgage</td>
+          <td>1.1% p.a.</td>
+        </tr>
+        <tr>
+          <td>管理费（Management Fee）— High Yield 高收益</td>
+          <td>1.3% p.a.</td>
+        </tr>
+        <tr>
+          <td>表现费（Performance Fee）</td>
+          <td>20%（仅针对超出目标回报部分）</td>
+        </tr>
+        <tr>
+          <td>表现费上限</td>
+          <td>0.75% p.a.</td>
+        </tr>
+        <tr>
+          <td>认购费</td>
+          <td><strong>无</strong></td>
+        </tr>
+        <tr>
+          <td>赎回费</td>
+          <td><strong>无</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout callout-info">
+      <div class="callout-title">💡 费用结构说明</div>
+      <p>表现费仅在基金回报超过目标回报时才收取，且设有 0.75% 的上限，确保管理人与投资人的利益高度一致——只有为投资人创造超额收益，管理人才能获得奖励。<strong>没有认购费、没有赎回费、没有锁定期</strong>，投资人可灵活进出。</p>
+    </div>
+  </div>
+
+  <!-- 适合人群 -->
+  <div class="card">
+    <h2>适合人群</h2>
+    <div class="audience-box">
+      <div class="audience-title">这个基金产品可能适合您，如果您：</div>
+      <ul style="margin-bottom:0">
+        <li>希望获得高于存款利率的稳定回报，但又不愿承受股市波动</li>
+        <li>需要每月稳定的现金流（如退休生活、家庭开支）</li>
+        <li>已有较大比例的股票或房产投资，希望分散组合风险</li>
+        <li>关注通胀对资产购买力的侵蚀，希望投资能"跑赢通胀"</li>
+        <li>属于批发投资者（Wholesale Investor），可投资 50 万澳元以上</li>
+        <li>持有美元资产，希望用美元直接投资海外优质资产而无需换汇</li>
+        <li>中国大陆或海外华人投资者，希望在澳洲配置资产并享受潜在税务优惠</li>
+      </ul>
+    </div>
+    <div class="audience-box" style="margin-top:0.75rem">
+      <div class="audience-title" style="color:var(--color-hybrid)">High Yield 高收益子产品额外适合：</div>
+      <ul style="margin-bottom:0">
+        <li>愿意承担稍高风险以获取更高回报的投资者</li>
+        <li>已经了解 First Mortgage 和 High Yield 高收益的结构差异，认可多元化抵押策略</li>
+        <li>希望在整体投资组合中配置一部分"增强收益"资产</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 风险提示 -->
+  <div class="card">
+    <h2>风险提示</h2>
+    <ul class="risk-list">
+      <li><strong>信贷风险：</strong>借款人可能违约。虽然基金持有抵押权，但处置抵押物可能需要时间和成本。High Yield 高收益子产品中的非第一抵押部分在违约时受偿顺序靠后，风险更高。</li>
+      <li><strong>利率风险：</strong>基金为浮动利率，若央行大幅降息，回报率将随之下降。</li>
+      <li><strong>流动性风险：</strong>虽然每月可赎回，但若短时间内大量投资人同时赎回，基金可能启动延期赎回条款。</li>
+      <li><strong>市场风险：</strong>商业地产市场整体下行可能影响抵押物价值和借款人还款能力。</li>
+      <li><strong>High Yield 高收益子产品额外风险：</strong>由于包含非第一抵押部分，在借款人违约或抵押物价值下降时，High Yield 高收益子产品的损失风险高于 First Mortgage 子产品。</li>
+      <li><strong>过往表现不代表未来收益：</strong>9.13% 和 11.19% 的历史回报为实际已实现数据（截至2026年6月30日），两个子基金历史回报均为 9.85%，但不构成对未来收益的保证。</li>
+    </ul>
+  </div>
+
+  <div class="footer-cta">
+    <h3>如需了解更多详情或预约一对一咨询</h3>
+    <p>请联系我们的华人投资顾问团队，我们将为您详细分析这只基金是否适合您的投资组合。</p>
+  </div>
+
+  <!-- 联系方式 -->
+  <div class="contact-section">
+    <h3>联系我们</h3>
+    <div class="contact-items">
+      <div class="contact-item">
+        <span class="contact-label">微信：</span>
+        <span class="contact-value">LIGCLUB</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">邮箱：</span>
+        <span class="contact-value">emarkts101@outlook.com</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">电话：</span>
+        <span class="contact-value">+61415431161</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <p>本文件仅供一般性信息参考，不构成个人财务建议。投资涉及风险，过往表现不代表未来收益。在做出任何投资决定前，请咨询持牌财务顾问。<br>© 2026</p>
+  </div>
+
+</div>
+</main>
+
+</body>
+</html>
