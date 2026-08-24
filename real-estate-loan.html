@@ -1,489 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>房地产贷款服务 — 自有基金直接出资，覆盖全规模开发融资需求</title>
+<title>房地产贷款服务</title>
 <style>
-*, *::before, *::after { box-sizing: border-box; }
-
-:root {
-  --color-bg: #f7f5f2;
-  --color-surface: #ffffff;
-  --color-surface-alt: #f0ede8;
-  --color-ink: #1a1a1a;
-  --color-ink-muted: #555;
-  --color-ink-subtle: #888;
-  --color-divider: #e2ddd6;
-  --color-accent: #4a3566;
-  --color-accent-light: #eee8f5;
-  --color-accent-ink: #ffffff;
-  --color-warn: #b8860b;
-  --color-warn-bg: #fdf8ec;
-  --color-info-bg: #eef5f2;
-  --color-info-accent: #1b4d3e;
-  --color-highlight: #5a3d7a;
-  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --font-size-base: 16px;
-  --line-height-body: 1.7;
-  --content-max: 920px;
-  --radius: 6px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-}
-
-html { font-size: var(--font-size-base); }
-
-body {
-  margin: 0;
-  padding: 0;
-  background: var(--color-bg);
-  color: var(--color-ink);
-  font-family: var(--font-body);
-  line-height: var(--line-height-body);
-  -webkit-font-smoothing: antialiased;
-}
-
-.page-header {
-  background: #2d1f42;
-  color: var(--color-accent-ink);
-  padding: 3rem 1.5rem 2.5rem;
-  text-align: center;
-}
-
-.page-header h1 {
-  margin: 0 0 0.5rem;
-  font-size: clamp(1.5rem, 4vw, 2.2rem);
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.page-header p {
-  margin: 0;
-  font-size: 0.95rem;
-  opacity: 0.82;
-  max-width: 580px;
-  margin-inline: auto;
-}
-
-.page-header .rec-label {
-  display: inline-block;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  border: 1px solid rgba(255,255,255,0.4);
-  border-radius: 3px;
-  padding: 0.2rem 0.7rem;
-  margin-bottom: 1rem;
-  opacity: 0.75;
-}
-
-main {
-  max-width: var(--content-max);
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-}
-
-.card {
-  background: var(--color-surface);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-
-.card h2 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-accent);
-  margin: 0 0 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--color-divider);
-}
-
-.card h2:first-child { margin-top: 0; }
-.card p { margin: 0 0 1rem; }
-.card ul, .card ol { margin: 0 0 1.25rem; padding-left: 1.5rem; }
-.card li { margin-bottom: 0.5rem; }
-.card li strong { color: var(--color-ink); }
-
-/* 规模分层对比 */
-.tier-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin: 1.5rem 0;
-}
-
-.tier-card {
-  border-radius: var(--radius);
-  padding: 1.5rem;
-}
-
-.tier-sm {
-  background: var(--color-accent-light);
-  border: 1px solid #d4c8e2;
-}
-
-.tier-lg {
-  background: var(--color-info-bg);
-  border: 1px solid #c8ddd5;
-}
-
-.tier-card .tier-tag {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0.2rem 0.6rem;
-  border-radius: 3px;
-  margin-bottom: 0.75rem;
-  color: #fff;
-}
-
-.tier-sm .tier-tag { background: var(--color-highlight); }
-.tier-lg .tier-tag { background: var(--color-info-accent); }
-
-.tier-card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.05rem;
-  font-weight: 700;
-}
-
-.tier-sm h3 { color: var(--color-highlight); }
-.tier-lg h3 { color: var(--color-info-accent); }
-
-.tier-card p { font-size: 0.9rem; margin: 0 0 0.75rem; }
-.tier-card ul { padding-left: 1.2rem; margin: 0; font-size: 0.88rem; }
-.tier-card li { margin-bottom: 0.35rem; }
-
-.callout {
-  border-radius: var(--radius);
-  padding: 1.25rem 1.5rem;
-  margin: 1.5rem 0;
-}
-
-.callout-info {
-  background: var(--color-info-bg);
-  border-left: 4px solid var(--color-info-accent);
-}
-
-.callout-warn {
-  background: var(--color-warn-bg);
-  border-left: 4px solid var(--color-warn);
-}
-
-.callout-highlight {
-  background: var(--color-accent-light);
-  border-left: 4px solid var(--color-highlight);
-}
-
-.callout .callout-title {
-  font-weight: 700;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-.callout p { margin: 0; font-size: 0.92rem; }
-
-table.data-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.25rem 0;
-  font-size: 0.92rem;
-}
-
-table.data-table th,
-table.data-table td {
-  padding: 0.65rem 0.9rem;
-  text-align: left;
-  border-bottom: 1px solid var(--color-divider);
-}
-
-table.data-table th {
-  background: var(--color-surface-alt);
-  font-weight: 600;
-  font-size: 0.82rem;
-  color: var(--color-ink-muted);
-  letter-spacing: 0.04em;
-}
-
-table.data-table td:last-child {
-  text-align: right;
-  font-family: var(--font-mono);
-  font-size: 0.88rem;
-}
-
-.audience-box {
-  background: var(--color-surface-alt);
-  border-radius: var(--radius);
-  padding: 1.25rem 1.5rem;
-  margin: 1rem 0;
-}
-
-.audience-box .audience-title {
-  font-weight: 700;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-  color: var(--color-accent);
-}
-
-.risk-list {
-  list-style: none;
-  padding: 0;
-}
-
-.risk-list li {
-  padding: 0.6rem 0 0.6rem 1.8rem;
-  position: relative;
-  border-bottom: 1px solid var(--color-divider);
-}
-
-.risk-list li:last-child { border-bottom: none; }
-
-.risk-list li::before {
-  content: "⚠";
-  position: absolute;
-  left: 0;
-  color: var(--color-warn);
-  font-size: 0.9rem;
-}
-
-.footer-cta {
-  background: #2d1f42;
-  color: var(--color-accent-ink);
-  border-radius: var(--radius);
-  padding: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.footer-cta h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: inherit;
-}
-
-.footer-cta p {
-  margin: 0;
-  opacity: 0.88;
-  font-size: 0.95rem;
-}
-
-.disclaimer {
-  font-size: 0.8rem;
-  color: var(--color-ink-subtle);
-  text-align: center;
-  line-height: 1.6;
-  padding-bottom: 2rem;
-}
-
-@media print {
-  body { background: #fff; }
-  .page-header { background: none; color: var(--color-ink); border-bottom: 2px solid var(--color-accent); }
-  .card { box-shadow: none; border: 1px solid var(--color-divider); break-inside: avoid; }
-  .tier-grid { grid-template-columns: 1fr; }
-  .footer-cta { background: none; color: var(--color-ink); border: 1px solid var(--color-accent); }
-}
-
-@media (max-width: 700px) {
-  .tier-grid { grid-template-columns: 1fr; }
-  main { padding: 1.25rem 1rem; }
-  .card { padding: 1.25rem; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { transition: none !important; animation: none !important; }
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;background:#f5f6fa;color:#333;line-height:1.7}
+.hero{background:linear-gradient(135deg,#0d47a1,#1565c0);color:#fff;padding:40px 20px 30px;text-align:center}
+.hero h1{font-size:22px;margin-bottom:10px}
+.hero .tagline{font-size:15px;opacity:.9}
+.hero .amount{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:12px 20px;font-size:18px;font-weight:700;margin-top:12px}
+.container{max-width:600px;margin:0 auto;padding:20px 16px 40px}
+.section{background:#fff;border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.section h2{font-size:17px;color:#0d47a1;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.loan-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.loan-item{background:#f8f9ff;border-radius:8px;padding:14px;text-align:center}
+.loan-item .icon{font-size:24px;margin-bottom:6px}
+.loan-item .name{font-size:13px;font-weight:600;color:#333}
+.loan-item .desc{font-size:11px;color:#666;margin-top:4px}
+.feature-list{list-style:none}
+.feature-list li{padding:10px 0;padding-left:28px;position:relative;font-size:14px;border-bottom:1px solid #f5f5f5}
+.feature-list li:last-child{border:none}
+.feature-list li::before{content:"✅";position:absolute;left:0}
+.audience-tags{display:flex;flex-wrap:wrap;gap:8px}
+.audience-tag{background:#e3f2fd;color:#1565c0;padding:8px 16px;border-radius:20px;font-size:14px}
+.cta-box{background:linear-gradient(135deg,#0d47a1,#1565c0);color:#fff;border-radius:12px;padding:24px;text-align:center;margin-bottom:16px}
+.cta-box h3{font-size:18px;margin-bottom:8px}
+.cta-box p{font-size:14px;opacity:.9;margin-bottom:12px}
+.contact-btn{display:inline-block;background:#fff;color:#0d47a1;padding:10px 28px;border-radius:24px;font-weight:600;font-size:15px;text-decoration:none}
+.contact-info{text-align:center;padding:16px;font-size:13px;color:#666}
+.contact-info a{color:#1565c0;text-decoration:none}
 </style>
 </head>
 <body>
 
-<header class="page-header">
-  <span class="rec-label">服务推荐</span>
-  <h1>房地产贷款服务</h1>
-  <p>Real Estate Lending — 自有基金直接出资，500 万到 3,000 万+全覆盖，一个电话解决您的融资需求</p>
-</header>
-
-<main>
-
-  <!-- 服务概述 -->
-  <div class="card">
-    <h2>服务概述</h2>
-    <p>我们为华人开发商和投资者提供全方位的房地产融资服务。与传统贷款经纪不同，<strong>我们自有基金可以直接出资放款</strong>，不需要等待第三方审批，决策更快、条件更灵活。</p>
-    <p>我们的核心定位是<strong>全规模覆盖</strong>——无论您的项目大小，我们都能为您提供资金支持。您只需要找我们一家，不用再在不同机构之间辗转。</p>
-
-    <div class="tier-grid">
-      <div class="tier-card tier-sm">
-        <span class="tier-tag">自有基金放款</span>
-        <h3>500 万 – 3,000 万澳币</h3>
-        <p>中小型开发项目的理想选择</p>
-        <ul>
-          <li><strong>我们自有基金直接出资</strong>，无需等待外部审批</li>
-          <li>决策快，数周内可完成评估和放款</li>
-          <li>条件灵活，可根据项目情况定制方案</li>
-          <li>深耕华人社区，理解中小开发商的真实需求</li>
-          <li>填补市场空白——大型机构往往不愿做这个区间</li>
-        </ul>
-      </div>
-      <div class="tier-card tier-lg">
-        <span class="tier-tag">对接合作机构</span>
-        <h3>3,000 万澳币以上</h3>
-        <p>大型项目的机构级融资方案</p>
-        <ul>
-          <li>对接合作的澳洲头部商业抵押贷款基金</li>
-          <li>管理规模<strong>3000 万澳币</strong></li>
-          <li>提供机构级的资金实力和风控体系</li>
-          <li>同样享受我们的全程中英文服务</li>
-          <li>一站式对接，无需自行寻找资金方</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="callout callout-highlight">
-      <div class="callout-title">💡 为什么这很重要？</div>
-      <p>澳洲市场上，大型商业抵押贷款基金通常只做 3,000 万澳币以上的大项目。500 万至 3,000 万区间的中小型开发项目，往往找不到愿意出资的贷款方——银行嫌项目太小，大基金门槛太高。<strong>我们正是为填补这个空白而生。</strong>同时，当您的项目规模超过 3,000 万，我们也能通过合作的头部机构满足需求。无论项目大小，您只需找我们一家。</p>
-    </div>
-  </div>
-
-  <!-- 业务覆盖范围 -->
-  <div class="card">
-    <h2>业务覆盖范围</h2>
-    <p>我们提供以下六大类贷款服务，覆盖房地产开发全流程和個人购房需求：</p>
-    <table class="data-table">
-      <caption style="caption-side:top; text-align:left; font-size:0.88rem; color:var(--color-ink-muted); padding-bottom:0.5rem;">为各类房地产项目提供融资支持</caption>
-      <thead>
-        <tr>
-          <th scope="col">贷款类型</th>
-          <th style="text-align:right">说明</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>房地产开发贷款（Development Finance）</td>
-          <td>住宅/商业开发项目全流程融资</td>
-        </tr>
-        <tr>
-          <td>建筑贷款（Construction Loan）</td>
-          <td>按工程进度分阶段放款</td>
-        </tr>
-        <tr>
-          <td>商业地产贷款（Commercial Property Loan）</td>
-          <td>办公楼、商铺、工业物业等</td>
-        </tr>
-        <tr>
-          <td>土地贷款（Land Loan）</td>
-          <td>土地收购及前期开发资金</td>
-        </tr>
-        <tr>
-          <td>过桥贷款（Bridge Finance）</td>
-          <td>短期资金周转，DA 审批、再融资过渡</td>
-        </tr>
-        <tr>
-          <td>自住房/投资房贷款（Residential Mortgage）</td>
-          <td>个人购房及投资组合贷款</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- 核心优势 -->
-  <div class="card">
-    <h2>核心优势</h2>
-    <ul>
-      <li><strong>自有基金，直接出资</strong> — 我们不是中间人或纯经纪，我们的基金可以直接放款。审批流程更短、条件更灵活、沟通更高效——您无需在多个机构之间辗转。</li>
-      <li><strong>决策快，灵活度高</strong> — 相比大型银行长达数月的审批周期，我们可以在数周内完成评估和放款，帮助您抢占市场时机。</li>
-      <li><strong>大小通吃，一站搞定</strong> — 500 万到 3,000 万自有基金放款，3,000 万以上对接合作大型机构。一个电话、一个联系人，解决全部融资需求。</li>
-      <li><strong>深耕华人社区，懂您的需求</strong> — 华人团队，中英文全程服务。我们深刻理解华人开发商和投资者的特殊情况：海外收入证明、新移民身份、公司架构、多套投资房的贷款结构设计等，都有成熟解决方案。</li>
-      <li><strong>针对华人投资者的专属方案</strong> — 海外收入/资产证明贷款申请、新登陆移民/PR/公民不同身份方案、自雇人士及公司结构贷款设计、多套投资房组合贷款（Portfolio Lending）。</li>
-      <li><strong>多渠道资金匹配</strong> — 除自有基金外，还可对接银行、私募信贷、私人资金等多种渠道，为您匹配最优方案。</li>
-    </ul>
-  </div>
-
-  <!-- 适合人群 -->
-  <div class="card">
-    <h2>适合人群</h2>
-    <div class="audience-box">
-      <div class="audience-title">我们的贷款服务可能适合您，如果您：</div>
-      <ul style="margin-bottom:0">
-        <li>在澳洲从事房地产开发，项目规模在 500 万 – 3,000 万澳币区间</li>
-        <li>有大型开发项目（3,000 万+），需要对接机构级资金方</li>
-        <li>想从国内汇款到澳洲买房，需要解决海外收入证明问题</li>
-        <li>刚移民/PR，需要购房贷款但尚未建立本地信用记录</li>
-        <li>已有多套投资房，想继续扩盘（Portfolio Lending）</li>
-        <li>项目需要短期过桥资金（如等待 DA 审批或再融资）</li>
-        <li>希望贷款全程有华人团队中英文沟通，避免语言障碍</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 关键数据参考 -->
-  <div class="card">
-    <h2>关键数据参考</h2>
-    <table class="data-table">
-      <caption style="caption-side:top; text-align:left; font-size:0.88rem; color:var(--color-ink-muted); padding-bottom:0.5rem;">以下为 2026 年市场参考范围，具体根据项目情况而定</caption>
-      <thead>
-        <tr>
-          <th scope="col">指标</th>
-          <th style="text-align:right">参考范围</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>自住房贷款 LVR 上限</td>
-          <td>约 80%</td>
-        </tr>
-        <tr>
-          <td>投资房贷款 LVR 上限</td>
-          <td>约 70–80%</td>
-        </tr>
-        <tr>
-          <td>开发贷款 LVR 上限</td>
-          <td>约 65–70%</td>
-        </tr>
-        <tr>
-          <td>自有基金放款区间</td>
-          <td>500 万 – 3,000 万澳币</td>
-        </tr>
-        <tr>
-          <td>合作基金规模</td>
-          <td>3000 万澳币</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="callout callout-warn">
-      <div class="callout-title">⚡ 温馨提示</div>
-      <p>利率和条件会随市场环境变化，以上仅为参考范围。实际方案将根据项目类型、LVR、借款人资质等因素综合确定。建议直接联系我们的贷款团队获取针对您项目的具体报价。</p>
-    </div>
-  </div>
-
-  <!-- 风险提示 -->
-  <div class="card">
-    <h2>风险提示</h2>
-    <ul class="risk-list">
-      <li><strong>利率风险：</strong>浮动利率贷款的还款金额会随市场利率变化而波动，利率上升将增加还款压力。</li>
-      <li><strong>开发风险：</strong>房地产开发涉及 DA 审批、建筑商履约、市场变化等多重不确定因素，可能影响项目进度和还款能力。</li>
-      <li><strong>估值风险：</strong>贷款金额基于物业估值，若市场下行导致估值降低，可能需要追加保证金或面临再融资困难。</li>
-      <li><strong>汇率风险：</strong>对于从海外汇款还款的借款人，澳元兑人民币汇率波动可能影响实际还款成本。</li>
-      <li><strong>法律与税务风险：</strong>不同贷款结构（个人、公司、信托）的税务处理不同，建议在贷款前咨询专业税务顾问。</li>
-    </ul>
-  </div>
-
-</main>
-
-<div style="max-width:920px; margin:0 auto; padding:0 1.5rem 3rem;">
-  <div class="footer-cta">
-    <h3>如需了解更多详情或预约一对一咨询</h3>
-    <p>请联系我们的华人贷款顾问团队，我们将为您的项目量身定制最优融资方案。</p>
-  </div>
-
-  <div class="disclaimer">
-    <p>本文件仅供一般性信息参考，不构成个人财务建议。贷款涉及风险，具体条款以最终合同为准。在做出任何贷款决定前，请咨询持牌财务顾问。<br>© 2026</p>
-  </div>
+<div class="hero">
+<h1>💰 房地产贷款服务</h1>
+<p class="tagline">自有基金直接出资 · 非银行渠道 · 灵活高效</p>
+<div class="amount">$500万 – $3,000万</div>
 </div>
 
+<div class="container">
+
+<div class="section">
+<h2>📋 6大贷款类型</h2>
+<div class="loan-grid">
+<div class="loan-item">
+<div class="icon">🏗️</div>
+<div class="name">住宅开发贷款</div>
+<div class="desc">新建住宅项目开发资金</div>
+</div>
+<div class="loan-item">
+<div class="icon">🏢</div>
+<div class="name">商业地产贷款</div>
+<div class="desc">商业物业购置与翻新</div>
+</div>
+<div class="loan-item">
+<div class="icon">🌍</div>
+<div class="name">土地贷款</div>
+<div class="desc">土地购置与分期开发</div>
+</div>
+<div class="loan-item">
+<div class="icon">⚡</div>
+<div class="name">过桥贷款</div>
+<div class="desc">短期资金周转快速放款</div>
+</div>
+<div class="loan-item">
+<div class="icon">🏦</div>
+<div class="name">SMSF贷款</div>
+<div class="desc">自管养老金基金购房</div>
+</div>
+<div class="loan-item">
+<div class="icon">📑</div>
+<div class="name">商业按揭</div>
+<div class="desc">商业物业再融资</div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>✨ 我们的优势</h2>
+<ul class="feature-list">
+<li>自有基金直接出资，无需银行审批流程</li>
+<li>贷款额度灵活：$500万 – $3,000万</li>
+<li>审批快速，最快7天放款</li>
+<li>方案定制，根据项目情况灵活设计</li>
+<li>覆盖全规模项目，从中小型到大型开发</li>
+<li>华人团队，中英文全程沟通无障碍</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>👤 适合人群</h2>
+<div class="audience-tags">
+<span class="audience-tag">房产开发者</span>
+<span class="audience-tag">房产投资者</span>
+<span class="audience-tag">SMSF基金</span>
+<span class="audience-tag">商业物业持有者</span>
+<span class="audience-tag">土地开发商</span>
+</div>
+</div>
+
+<div class="cta-box">
+<h3>需要了解贷款方案？</h3>
+<p>告诉我们您的项目情况，为您定制专属融资方案</p>
+<a class="contact-btn" href="https://wa.me/61415431161">📱 立即咨询</a>
+</div>
+
+<div class="contact-info">
+<p>微信：LIGCLUB</p>
+<p>邮箱：<a href="mailto:emarkts101@outlook.com">emarkts101@outlook.com</a></p>
+<p>电话：+61 415 431 161</p>
+<p style="margin-top:12px"><a href="index.html">← 返回资源中心</a></p>
+</div>
+
+</div>
 </body>
 </html>
