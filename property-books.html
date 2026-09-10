@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>澳洲房产避坑宝典系列 · 任选4册套装 · 总览与购买指南</title>
+<style>
+:root{
+  --navy:#0f3057; --navy2:#1a4a7a; --navy3:#0b2440;
+  --gold:#c9a227; --gold-dk:#9a7a14; --gold-bg:#faf3dc;
+  --red:#b3261e; --red-bg:#fdecea; --red-line:#e6b3ae;
+  --green:#1b6b3a; --green-bg:#e9f5ee;
+  --amber:#9a6200; --amber-bg:#fff6df;
+  --ink:#1d2733; --muted:#5c6b7a; --line:#dde5ec; --bg:#edf1f5; --paper:#ffffff;
+  --b1:#0f3057; --b2:#6e1d18; --b3:#14532d; --b4:#7a3e00;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC","Source Han Sans SC",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  background:var(--bg); color:var(--ink); line-height:1.78; font-size:15.5px;
+}
+.page{
+  max-width:880px; margin:26px auto; background:var(--paper);
+  padding:52px 62px; box-shadow:0 3px 22px rgba(15,48,87,.14); border-radius:4px;
+  position:relative;
+}
+@media print{
+  body{background:#fff; font-size:12.5px;}
+  .page{box-shadow:none; margin:0 auto; max-width:none; width:auto; border-radius:0; padding:10px 4px; page-break-after:always;}
+  .page:last-child{page-break-after:auto;}
+  .no-print{display:none !important;}
+}
+@page{size:A4; margin:16mm 14mm;}
+/* ===== 封面（系列套装 · 藏青金主视觉） ===== */
+.cover{
+  background:linear-gradient(150deg,var(--navy3) 0%,var(--navy) 46%,#16406e 78%,#1f5488 100%);
+  color:#fff; padding:0; overflow:hidden; min-height:1050px; display:flex; flex-direction:column;
+}
+.cover-top{padding:64px 66px 0;}
+.cover-brand{font-size:13px; letter-spacing:3px; color:#cdd9e6; text-transform:uppercase;}
+.cover-brand b{color:var(--gold); letter-spacing:2px;}
+.cover-main{flex:1; padding:40px 66px 0;}
+.cover-kicker{display:inline-block; background:rgba(201,162,39,.16); border:1px solid rgba(201,162,39,.55); color:var(--gold); font-size:13.5px; padding:6px 16px; border-radius:999px; letter-spacing:2px; margin-bottom:26px;}
+.cover h1{font-size:52px; line-height:1.25; font-weight:800; letter-spacing:1px;}
+.cover h1 .hl{color:var(--gold);}
+.cover .sub{margin-top:18px; font-size:19px; color:#dbe5ef; font-weight:400;}
+.cover-en{margin-top:10px; font-size:13px; color:#8fa6bd; letter-spacing:1px; font-style:italic;}
+.cover-feats{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:44px;}
+.cover-feat{background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); border-radius:10px; padding:16px 16px 14px;}
+.cover-feat .n{font-size:24px; font-weight:800; color:var(--gold);}
+.cover-feat .t{font-size:13.5px; color:#e3ecf5; margin-top:3px; line-height:1.5;}
+.cover-bottom{padding:0 66px 56px; margin-top:40px;}
+.cover-price{display:inline-flex; align-items:center; gap:12px; background:var(--gold); color:var(--navy3); font-weight:800; font-size:18px; padding:10px 22px; border-radius:8px;}
+.cover-price s{opacity:.55; font-weight:700;}
+.cover-meta{margin-top:16px; font-size:12.5px; color:#93a9c0; line-height:1.9;}
+.cover-wave{height:10px; background:repeating-linear-gradient(90deg,var(--gold) 0 26px,transparent 26px 40px); opacity:.85;}
+/* ===== 章节头 ===== */
+.chapter-head{
+  background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);
+  color:#fff; border-radius:12px; padding:34px 38px; margin:0 0 30px; position:relative; overflow:hidden;
+}
+.chapter-head::after{content:""; position:absolute; right:-40px; top:-40px; width:190px; height:190px; border-radius:50%; background:rgba(201,162,39,.14);}
+.chapter-head .no{font-size:13px; letter-spacing:4px; color:var(--gold); font-weight:700; text-transform:uppercase;}
+.chapter-head h2{font-size:33px; font-weight:800; margin-top:6px; line-height:1.3;}
+.chapter-head .desc{margin-top:10px; color:#d7e2ee; font-size:15px; max-width:640px;}
+h3{font-size:21.5px; color:var(--navy); margin:34px 0 12px; padding-left:14px; border-left:5px solid var(--gold); line-height:1.4;}
+h4{font-size:17px; color:var(--navy2); margin:22px 0 8px;}
+p{margin:0 0 12px;}
+.lead{font-size:16.5px; color:#33465a; background:var(--gold-bg); border-left:4px solid var(--gold); padding:14px 18px; border-radius:0 8px 8px 0; margin:0 0 22px;}
+strong{color:var(--navy);}
+.en{font-style:italic; color:#41586e; font-size:.94em;}
+ul.plain{margin:0 0 14px 4px; list-style:none;}
+ul.plain li{padding-left:22px; position:relative; margin-bottom:7px;}
+ul.plain li::before{content:"▸"; position:absolute; left:2px; color:var(--gold-dk); font-weight:700;}
+/* ===== 提示盒 ===== */
+.box{border-radius:10px; padding:16px 20px; margin:16px 0 20px; font-size:14.8px;}
+.box .bt{font-weight:800; display:flex; align-items:center; gap:8px; margin-bottom:6px; font-size:15.5px;}
+.box p:last-child{margin-bottom:0;}
+.warn{background:var(--red-bg); border:1px solid var(--red-line);}
+.warn .bt{color:var(--red);}
+.tip{background:var(--green-bg); border:1px solid #bcdccb;}
+.tip .bt{color:var(--green);}
+.note{background:var(--amber-bg); border:1px solid #ecd9a8;}
+.note .bt{color:var(--amber);}
+.info{background:#eef4fa; border:1px solid #c9d9ea;}
+.info .bt{color:var(--navy2);}
+/* ===== 数字卡 ===== */
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px; margin:16px 0 20px;}
+.stat{background:#f6f9fc; border:1px solid var(--line); border-top:4px solid var(--gold); border-radius:10px; padding:14px 16px;}
+.stat .v{font-size:24px; font-weight:800; color:var(--navy); line-height:1.25;}
+.stat .v small{font-size:13px; font-weight:600; color:var(--muted);}
+.stat .k{font-size:13px; color:var(--muted); margin-top:3px; line-height:1.5;}
+/* ===== 表格 ===== */
+table.data{width:100%; border-collapse:collapse; margin:14px 0 20px; font-size:14px;}
+table.data th{background:var(--navy); color:#fff; padding:9px 12px; text-align:left; font-weight:700; font-size:13.5px;}
+table.data td{padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+table.data tr:nth-child(even) td{background:#f7fafc;}
+table.data .rowhead{font-weight:700; color:var(--navy);}
+/* ===== 分册卡片 ===== */
+.bk-card{border:1.5px solid var(--line); border-radius:12px; margin:22px 0 26px; overflow:hidden; page-break-inside:avoid;}
+.bk-head{display:flex; align-items:center; gap:14px; padding:16px 22px; color:#fff;}
+.bk-head .dot{width:14px; height:14px; border-radius:50%; background:#fff; flex:none; box-shadow:0 0 0 4px rgba(255,255,255,.22);}
+.bk-head .bk-no{font-size:12px; letter-spacing:2px; opacity:.85; font-weight:700; text-transform:uppercase;}
+.bk-head h4{color:#fff; margin:0; font-size:19.5px; line-height:1.35;}
+.bk-head .bk-en{margin-left:auto; font-size:11.5px; font-style:italic; opacity:.8; text-align:right; max-width:220px;}
+.bk-head.c1{background:linear-gradient(135deg,var(--b1),#1a4a7a);}
+.bk-head.c2{background:linear-gradient(135deg,var(--b2),#8d2a22);}
+.bk-head.c3{background:linear-gradient(135deg,var(--b3),#1e6b3c);}
+.bk-head.c4{background:linear-gradient(135deg,var(--b4),#96530e);}
+.bk-body{padding:18px 22px 20px; background:#fff;}
+.bk-pos{font-size:15px; color:#33465a; margin-bottom:10px;}
+.bk-pos b{color:var(--navy);}
+.bk-feats{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:8px; margin:10px 0 14px;}
+.bk-feat{background:#f6f9fc; border:1px solid var(--line); border-radius:8px; padding:8px 12px; font-size:13px; color:#41525f;}
+.bk-feat b{color:var(--navy);}
+.bk-price{display:inline-block; background:var(--gold); color:var(--navy3); font-weight:800; font-size:15px; padding:5px 16px; border-radius:7px; margin-bottom:12px;}
+.toc-mini{list-style:none; margin:8px 0 0; border-top:1px dashed var(--line); padding-top:10px;}
+.toc-mini li{font-size:13px; color:#5c6b7a; padding:4px 0 4px 20px; position:relative; border-bottom:1px dotted #e8eef4;}
+.toc-mini li::before{content:"›"; position:absolute; left:4px; color:var(--gold-dk); font-weight:800;}
+.toc-mini li b{color:var(--navy); font-weight:700;}
+.toc-mini .tag{display:inline-block; font-size:11px; color:#8a99a8; margin-left:6px;}
+/* ===== 套装价格区 ===== */
+.price-hero{background:linear-gradient(135deg,var(--navy3),var(--navy)); border-radius:12px; color:#fff; padding:26px 30px; margin:18px 0 22px;}
+.price-hero .ph-label{font-size:13px; letter-spacing:3px; color:var(--gold); font-weight:800; text-transform:uppercase; margin-bottom:10px;}
+.price-hero .big{font-size:40px; font-weight:800; color:var(--gold); line-height:1.15;}
+.price-hero .big small{font-size:16px; color:#cdd9e6; font-weight:600;}
+.price-hero .save{margin-top:8px; font-size:15px; color:#e3ecf5;}
+.price-hero .save b{color:var(--gold);}
+table.price{width:100%; border-collapse:collapse; margin:14px 0 20px; font-size:14.5px;}
+table.price th{background:var(--navy); color:#fff; padding:10px 14px; text-align:left; font-weight:700;}
+table.price td{padding:10px 14px; border-bottom:1px solid var(--line);}
+table.price tr:nth-child(even) td{background:#f7fafc;}
+table.price .sum td{background:var(--gold-bg); font-weight:800; color:var(--navy); border-top:2px solid var(--gold);}
+table.price .set td{background:#eef4fa; font-weight:800; color:var(--navy);}
+.strike{text-decoration:line-through; color:#8a99a8; font-weight:600;}
+/* ===== 时间线（购买阶段） ===== */
+.timeline{margin:18px 0 24px; border-left:3px solid var(--navy2); padding-left:0;}
+.tstep{position:relative; padding:0 0 22px 26px;}
+.tstep::before{content:""; position:absolute; left:-9px; top:5px; width:15px; height:15px; border-radius:50%; background:var(--gold); border:3px solid var(--navy);}
+.tstep .tno{font-size:12px; font-weight:800; color:var(--gold-dk); letter-spacing:1.5px;}
+.tstep h4{margin:2px 0 6px; font-size:16.5px;}
+.tstep p{margin-bottom:6px; font-size:14.5px;}
+/* ===== CTA / 占位 ===== */
+.cta-gap{border:2px dashed var(--gold-dk); background:var(--gold-bg); border-radius:12px; padding:22px 26px; margin:22px 0 10px; text-align:center;}
+.cta-gap .cta-t{font-size:19px; font-weight:800; color:var(--navy);}
+.cta-gap .cta-s{font-size:14px; color:#6a5a1e; margin-top:6px;}
+.cta-gap .cta-btn{display:inline-block; margin-top:12px; background:var(--navy); color:#fff; font-weight:800; font-size:15px; padding:10px 30px; border-radius:8px; letter-spacing:1px;}
+.cta-gap .cta-note{font-size:12px; color:#93824a; margin-top:10px;}
+.disclaimer{background:#f4f6f8; border:1.5px solid #b9c6d2; border-radius:10px; padding:18px 22px; margin:22px 0; font-size:13.2px; color:#41525f;}
+.disclaimer .dt{font-weight:800; color:var(--navy); font-size:14.5px; margin-bottom:6px; display:flex; gap:8px; align-items:center;}
+.print-note{font-size:12.5px; color:#7d8fa1; background:#f2f6fa; border:1px dashed #b9c9d9; border-radius:8px; padding:8px 14px; margin:10px 0 14px;}
+.footnav{display:flex; justify-content:space-between; font-size:12.5px; color:#8a99a8; border-top:1px solid var(--line); margin-top:34px; padding-top:12px;}
+.kw{background:linear-gradient(transparent 62%, #f3dd8f 62%); font-weight:700;}
+.bk-hook{display:inline-block;font-size:14px;font-weight:800;color:#7a5200;background:linear-gradient(135deg,#ffe9a8,#ffd76e);border:1px solid #e3bd4e;border-radius:999px;padding:5px 14px;margin:10px 0 4px;letter-spacing:.3px;}
+
+/* ===== 手机端适配 MOBILE-FIX-20260910 v2 ===== */
+@media (max-width:640px){
+  body{font-size:15px;}
+  .page{margin:10px 6px; padding:30px 14px 34px;}
+  table.data{display:block; overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  table.data th, table.data td{min-width:110px; overflow-wrap:anywhere;}
+  .toc li{flex-wrap:wrap; row-gap:4px;}
+  .toc li .td{flex-basis:100%; padding-left:50px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ 封面 ============ -->
+<section class="page cover">
+  <div class="cover-top">
+    <div class="cover-brand"><b>AUSSIE PROPERTY</b> · 华人买家实务手册 · 系列总览与购买指南</div>
+  </div>
+  <div class="cover-main">
+    <div class="cover-kicker">四册独立成书 · 亦可整套入手</div>
+    <h1>澳洲房产避坑宝典<span class="hl">系列</span></h1>
+    <div style="font-size:24px;font-weight:700;color:#dbe5ef;margin-top:14px;">买房全流程 · 贷款与避税 · 挑房与砍价 · 出租与管理</div>
+    <div class="sub" style="margin-top:14px;">一套把「看懂系统 → 算清税费 → 验房砍价 → 持有出租」四段路各自走通的分册系列：每册独立封面、独立目录、自带可打印工具，可按你所处的阶段单册购买，也可整套收藏。</div>
+    <div class="cover-en">The New Migrant's Complete Guide to Buying Property in Australia — 4-Book Series · AUSSIE PROPERTY</div>
+    <div class="cover-feats">
+      <div class="cover-feat"><div class="n">4</div><div class="t">册独立分册<br>按购买决策阶段划分，各册独立完整</div></div>
+      <div class="cover-feat"><div class="n">8</div><div class="t">套可打印工具<br>清单 · 自查表 · 阅读卡 · 速算器</div></div>
+      <div class="cover-feat"><div class="n">60+</div><div class="t">条中英术语<br>按场景分组拆布于四册，随查随用</div></div>
+    </div>
+  </div>
+  <div class="cover-bottom">
+    <div class="cover-price">任选 4 册套装：AU$49 <s>单册合计 AU$64.6</s> · 省 AU$15.6</div>
+    <div class="cover-meta">
+      主线：维多利亚州 / 墨尔本 · 各州差异处均标注「以所在州官方为准」<br>
+      数据核实日：2026年9月9日 · 每个关键数字旁均标注公开来源<br>
+      单册定价：分册一 AU$19.9 · 分册二 AU$19.9 · 分册三 AU$9.9 · 分册四 AU$14.9
+    </div>
+  </div>
+  <div class="cover-wave"></div>
+</section>
+
+<!-- ============ 系列总览 ============ -->
+<section class="page">
+  <div class="chapter-head">
+    <div class="no">SERIES OVERVIEW</div>
+    <h2>这套书讲什么 · 怎么分册</h2>
+    <div class="desc">原《澳洲房产避坑宝典》全一册覆盖 11 大主题篇章、9 套工具与 60+ 条术语。本系列按「你在买房路上的位置」把它重组为 4 册：每册独立成书、独立目录、自带工具，内容互有衔接但不重复收费。</div>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="v">4 <small>册</small></div><div class="k">独立分册，覆盖从研究到出租的完整周期</div></div>
+    <div class="stat"><div class="v">11 <small>大主题</small></div><div class="k">原全一册的主题篇章，全部分册承接，内容不丢失</div></div>
+    <div class="stat"><div class="v">9 <small>套工具</small></div><div class="k">看房36项 · 合同自查 · 验房阅读卡 · 持有成本表等</div></div>
+    <div class="stat"><div class="v">60+ <small>条术语</small></div><div class="k">中英对照术语卡，按场景分组拆布四册</div></div>
+  </div>
+  <div class="lead"><strong>一句话定位：</strong>这是一套面向华人买家的<strong>实务工具书</strong>——只做三件事：告诉你坑在哪里（知识层）、给你可以直接打印使用的清单与表格（工具层）、告诉你下一步该找谁做什么（行动层）。</div>
+  <div class="box info">
+    <div class="bt">🧭 怎么判断该买哪册？</div>
+    <p>看你现在卡在哪一段：<strong>还没看懂系统</strong>（类型、渠道、拍卖、合同）→ 分册一；<strong>在算钱</strong>（贷款月供、FIRB、印花税附加、预扣税）→ 分册二；<strong>要看房出价了</strong>（挑房选址、验房、合同审查、谈判）→ 分册三；<strong>已经买完准备出租</strong>（法规、现金流、房东税务）→ 分册四。下面每一册都有完整的目录预览，可以先看目录再决定。</p>
+  </div>
+  <div class="footnav"><span>澳洲房产避坑宝典系列</span><span>系列总览</span></div>
+</section>
+
+<!-- ============ 四册分册卡片 ============ -->
+<section class="page">
+  <div class="chapter-head">
+    <div class="no">THE FOUR BOOKS</div>
+    <h2>四册分册 · 逐册说明</h2>
+    <div class="desc">每张卡片包含：定位、内置工具、目录预览与单册定价。各册封面色调不同（蓝 / 红 / 绿 / 橙），便于整套识别。</div>
+  </div>
+
+  <!-- 分册一 -->
+  <div class="bk-card">
+    <div class="bk-head c1">
+      <span class="dot"></span>
+      <div>
+        <div class="bk-no">Book 1 · 分册一</div>
+        <h4>澳洲房产避坑宝典 · 买房全流程</h4>
+      </div>
+      <div class="bk-en">The Complete Process Guide</div><div class="bk-hook">从看房到拿钥匙 · 十步不掉坑</div>
+    </div>
+    <div class="bk-body">
+      <div class="bk-price">AU$19.9</div>
+      <div class="bk-pos"><b>引流主力 · 全流程主线。</b>从看懂澳洲房产系统到拿到钥匙：房产类型与产权、信息核查渠道、合同条款、拍卖 vs 私售、十步交割路线图，以及全流程骗局防线。第一次在澳洲买房，先读这本。</div>
+      <div class="bk-feats">
+        <div class="bk-feat"><b>7 章</b> · 系统全景 → 防骗局</div>
+        <div class="bk-feat"><b>3 套工具</b> · 拍卖日清单等</div>
+        <div class="bk-feat"><b>10 步</b> · 交割路线图</div>
+        <div class="bk-feat"><b>3 组</b> · 中英术语卡</div>
+      </div>
+      <ul class="toc-mini">
+        <li><b>第1章</b> 澳洲房产系统全景 — 与国内十大差异 · Torrens 产权 · 拍卖文化 · 土地价值逻辑</li>
+        <li><b>第2章</b> 房产类型篇 — House / Apartment / Townhouse / Villa Unit / Duplex · 产权形式 · 选房决策树</li>
+        <li><b>第3章</b> 信息渠道篇 — realestate.com.au / Domain 逐字段解读 · Council 规划查询</li>
+        <li><b>第4章</b> 合同篇 — Subject to Finance · 卖方合同暗坑 · 冷静期边界</li>
+        <li><b>第5章</b> 拍卖篇 — 五条铁律 · 拍卖前四周备战 · Passed-in 与买前报价</li>
+        <li><b>第6章</b> 全流程篇 — 十步路线图 · 五类专业人士分工 · 进度墙</li>
+        <li><b>第7章</b> 骗局与红旗篇 — 付款重定向 · 押金挪用 · 红旗速查 · 求助渠道</li>
+        <li><b>工具</b> 拍卖日清单（C）· 术语卡三组<span class="tag">附：关键数字核实清单节选 + 官方查询入口</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 分册二 -->
+  <div class="bk-card">
+    <div class="bk-head c2">
+      <span class="dot"></span>
+      <div>
+        <div class="bk-no">Book 2 · 分册二</div>
+        <h4>澳洲房产避坑宝典 · 贷款与避税</h4>
+      </div>
+      <div class="bk-en">Loan &amp; Tax Pitfall Guide for Overseas Buyers &amp; New Migrants</div><div class="bk-hook">海外买家多交的每一分税，都是没人告诉你的</div>
+    </div>
+    <div class="bk-body">
+      <div class="bk-price">AU$19.9</div>
+      <div class="bk-pos"><b>贷款为主角、税务收尾的双主线，受众从海外买家扩宽到所有要贷款的买家。</b>上篇贷款专题（贷1–贷10）：预审批、利率环境、借款能力、首付/LVR/LMI、固定 vs 浮动、Offset 与 Redraw、只还息悬崖、海外买家与新 PR 贷款通道、broker 选择；下篇税务收尾：FIRB/附加印花税/土地税/CGT/预扣全保留，数字全部带源。签证身份不同，可贷额度与税都差出一套房的首付——签字之前先算清。</div>
+      <div class="bk-feats">
+        <div class="bk-feat"><b>10 节</b> · 贷款专题（贷1–贷10）</div>
+        <div class="bk-feat"><b>5 州</b> · 附加印花税对比表</div>
+        <div class="bk-feat"><b>2+1 套工具</b> · 贷款文件清单 + 税务时间线</div>
+        <div class="bk-feat"><b>ATO</b> · 稽查动态与罚则提醒</div>
+      </div>
+      <ul class="toc-mini">
+        <li><b>上篇 · 贷款（本册新增）</b> 贷1 利率环境 · 贷2 借款能力 · 贷3 全流程时间线 · 贷4 首付 / LVR / LMI · 贷5 固定 vs 浮动</li>
+        <li><b>贷6–贷10</b> Offset 与 Redraw · 只还息与 Break Cost · 海外与新移民贷款专题 · Broker 与贷款红灯卡 · 贷款工具</li>
+        <li><b>第1章</b> 印花税与海外买家附加税 — 五州对比表（VIC / NSW / QLD 等）· OTP 期房优惠</li>
+        <li><b>第2章</b> FIRB 申请与费用 — 申请费档位 · 空置费 · 购房禁令边界</li>
+        <li><b>第3章</b> 土地税 — 起征门槛 · surcharge · 缺席业主附加</li>
+        <li><b>第4章</b> 资本利得税（CGT）— 50% 折让 · 6 年规则三个常见误区</li>
+        <li><b>第5章</b> FRCGW 15% 预扣与 2027 年改革 — 卖方与买方各自的风险</li>
+        <li><b>第6章</b> 税务时间线自查表 — 购前 / 持有 / 出售三段核对</li>
+        <li><b>工具</b> 房产税务时间线自查表 · 税与持有术语卡<span class="tag">附：ATO 稽查动态导读 + 官方入口</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 分册三 -->
+  <div class="bk-card">
+    <div class="bk-head c3">
+      <span class="dot"></span>
+      <div>
+        <div class="bk-no">Book 3 · 分册三</div>
+        <h4>澳洲房产避坑宝典 · 挑房与砍价</h4>
+      </div>
+      <div class="bk-en">Pick · Inspect &amp; Negotiate Toolkit</div><div class="bk-hook">会挑会谈，一套房省出六位数</div>
+    </div>
+    <div class="bk-body">
+      <div class="bk-price">AU$9.9</div>
+      <div class="bk-pos"><b>超低价入口款 · 顺序即买房真实决策顺序：挑房最前、验房居中、砍价收尾。</b>上篇挑房专题（挑1–挑9）从华人买家心智重装（朝向反转、house 土地价值主体）讲到富人区效应（隔一条马路，价差个案可达三成）、选址四层漏斗、房型与土地占比、增值减值与红灯卡；下篇保留原验房三句暗语、报告翻译表、看房 36 项与出价谈判（三类筹码、underquoting、passed-in）。</div>
+      <div class="bk-feats">
+        <div class="bk-feat"><b>9 节</b> · 挑房专题（挑1–挑9）</div>
+        <div class="bk-feat"><b>24+36+10</b> · 首访/看房/合同三张清单</div>
+        <div class="bk-feat"><b>1 张</b> · 挑房决策记分卡</div>
+        <div class="bk-feat"><b>3 类筹码</b> · 出价谈判策略</div>
+      </div>
+      <ul class="toc-mini">
+        <li><b>上篇 · 挑房（本册新增）</b> 挑1 华人买家心智重装 · 挑2 富人区效应 · 挑3 选址四层漏斗 · 挑4 房型 · 挑5 增值减值与红灯卡</li>
+        <li><b>挑6–挑9</b> 首访 24 项 · 二次返访 · 决策纪律 · 挑房记分卡</li>
+        <li><b>第1章</b> 验房报告三句暗语 — Not accessible / Previous termite activity / Recommend further investigation，各配中英追问话术</li>
+        <li><b>第2章</b> 验房报告翻译表 — 验房师三硬标准 · 下单时机 · 工具包 D 阅读卡</li>
+        <li><b>第3章</b> 工具包 A · 看房 36 项清单 — 可打印，二次看房逐项打勾</li>
+        <li><b>第4章</b> 工具包 B · 合同自查 10 项 — 交给律师前先自己过一遍</li>
+        <li><b>第5章</b> 砍价与出价策略 — 三类筹码 · underquoting 应对 · passed-in 之后怎么办</li>
+        <li><b>工具</b> A / B / D 三套清单 + 挑房记分卡 + 验房术语卡<span class="tag">附：尽调五步闭环导读 + 官方入口</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 分册四 -->
+  <div class="bk-card">
+    <div class="bk-head c4">
+      <span class="dot"></span>
+      <div>
+        <div class="bk-no">Book 4 · 分册四</div>
+        <h4>澳洲房产避坑宝典 · 出租与管理</h4>
+      </div>
+      <div class="bk-en">The Landlord's Handbook</div><div class="bk-hook">买房只是上半场，这本管下半场的现金流</div>
+    </div>
+    <div class="bk-body">
+      <div class="bk-price">AU$14.9</div>
+      <div class="bk-pos"><b>复购款 · 买完之后的那一半。</b>出租前的准备与选 PM、租赁法规要点（含 2025-11-25 新规四要点）、租金回报率两种算法与负扣税税后视角、持有成本全景表与「忠诚税」、房东税务。买房只是上半场，这本管下半场。</div>
+      <div class="bk-feats">
+        <div class="bk-feat"><b>6 章</b> · 出租准备 → 四种局</div>
+        <div class="bk-feat"><b>2 套工具</b> · 成本表+速算器</div>
+        <div class="bk-feat"><b>4 种局</b> · 常见租赁困境拆解</div>
+        <div class="bk-feat"><b>10 问</b> · 投资自查清单</div>
+      </div>
+      <ul class="toc-mini">
+        <li><b>第1章</b> 出租准备 — 空置率数据怎么读 · 物业经理（PM）收费与 GST · 房东保险 · VRLT 边界</li>
+        <li><b>第2章</b> 租赁法规要点 — 2025-11-25 新规四要点 · 90 天通知 · 12 个月涨租上限 · 假房东骗局</li>
+        <li><b>第3章</b> 现金流 — Gross / Net Yield 公式 · 负扣税的税后视角 · 租金回报率速算器</li>
+        <li><b>第4章</b> 房东税务 — 三大税项 · 出售时 CGT 衔接分册二</li>
+        <li><b>第5章</b> 持有成本 — 全景表 · 「忠诚税」与电费比价 · 工具包 E 双栏表</li>
+        <li><b>第6章</b> 四种局与自查 10 问 — 常见租赁困境的应对框架</li>
+        <li><b>工具</b> 持有成本双栏表（E）· 租金回报率速算器 · 投资自查 10 问 · 租赁术语卡<span class="tag">附：官方入口</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footnav"><span>澳洲房产避坑宝典系列</span><span>四册分册说明</span></div>
+</section>
+
+<!-- ============ 对比表 ============ -->
+<section class="page">
+  <div class="chapter-head">
+    <div class="no">AT A GLANCE</div>
+    <h2>四册对比 · 一表选册</h2>
+    <div class="desc">适合谁、解决什么、内置什么工具——横向对比，按需选册。</div>
+  </div>
+  <table class="data">
+    <tr><th style="width:15%;">分册</th><th style="width:22%;">主题定位</th><th style="width:24%;">适合谁</th><th style="width:26%;">解决什么</th><th style="width:13%;">定价</th></tr>
+    <tr>
+      <td class="rowhead">① 全流程<span style="display:block;font-size:11.5px;color:#8a99a8;">蓝</span></td>
+      <td>系统全景 + 十步交割主线</td>
+      <td>第一次在澳买房的自住买家与新移民</td>
+      <td>看不懂系统、不会用渠道、怕拍卖怕合同、怕被骗</td>
+      <td><b>AU$19.9</b></td>
+    </tr>
+    <tr>
+      <td class="rowhead">② 贷款与税务<span style="display:block;font-size:11.5px;color:#8a99a8;">红</span></td>
+      <td>贷款全流程专题 + 五大税项</td>
+      <td>所有要贷款的买家，尤其海外身份与新移民</td>
+      <td>能借多少、借什么形态、找谁借；FIRB 费用、附加印花税、FRCGW 预扣、2027 改革算不清</td>
+      <td><b>AU$19.9</b></td>
+    </tr>
+    <tr>
+      <td class="rowhead">③ 挑房与砍价<span style="display:block;font-size:11.5px;color:#8a99a8;">绿</span></td>
+      <td>挑房选址 + 验房翻译 + 出价谈判</td>
+      <td>看房选区阶段的买家，尤其带着国内买房经验的华人</td>
+      <td>不会选区、朝向房型踩坑；看不懂验房报告、不知道出多少、被 underquoting 套路</td>
+      <td><b>AU$9.9</b></td>
+    </tr>
+    <tr>
+      <td class="rowhead">④ 房东出租<span style="display:block;font-size:11.5px;color:#8a99a8;">橙</span></td>
+      <td>租赁法规 + 现金流账本</td>
+      <td>已购房或即将交割的投资者与新房东</td>
+      <td>不懂新规、不会筛租客、算不清持有成本与税后回报</td>
+      <td><b>AU$14.9</b></td>
+    </tr>
+  </table>
+  <table class="data">
+    <tr><th style="width:15%;">分册</th><th style="width:35%;">内置工具（可打印）</th><th style="width:50%;">术语卡分组</th></tr>
+    <tr><td class="rowhead">① 买房全流程</td><td>拍卖日清单（C）· 中英术语速查卡</td><td>交易流程组 · 合同与法律组 · 数据与平台组</td></tr>
+    <tr><td class="rowhead">② 贷款与避税</td><td>贷款申请文件清单 · 房产税务时间线自查表</td><td>税与持有组</td></tr>
+    <tr><td class="rowhead">③ 挑房与砍价</td><td>挑房首访 24 项 · 看房 36 项（A）· 合同自查 10 项（B）· 验房报告阅读卡（D）· 挑房记分卡</td><td>验房组</td></tr>
+    <tr><td class="rowhead">④ 出租与管理</td><td>持有成本双栏表（E）· 租金回报率速算器 · 投资自查 10 问</td><td>租赁组</td></tr>
+  </table>
+  <div class="box tip">
+    <div class="bt">✅ 内容不重复收费</div>
+    <p>四册由同一底稿按主题重组而成，重复内容只保留在<strong>主归属分册</strong>（如 OTP 优惠只在分册二展开、冷静期只在分册一展开），其余分册用衔接语指路（如「详见分册二第 X 章」），不重复占据你的阅读时间，也不重复算钱。</p>
+  </div>
+  <div class="footnav"><span>澳洲房产避坑宝典系列</span><span>四册对比</span></div>
+</section>
+
+<!-- ============ 套装购买逻辑 ============ -->
+<section class="page">
+  <div class="chapter-head">
+    <div class="no">BUNDLE</div>
+    <h2>单买还是套装？</h2>
+    <div class="desc">按需单买，永远成立；凑满任意 4 册即享套装价 AU$49（单买合计 AU$64.6，省 AU$15.6）。系列扩册后（商业地产 · 卖房 · 房产投资等），新册同样计入，任选凑满 4 册即可。</div>
+  </div>
+  <table class="price">
+    <tr><th>购买方式</th><th>包含内容</th><th style="text-align:right;">价格（AU$）</th></tr>
+    <tr><td class="rowhead">分册一 单买</td><td>澳洲房产避坑宝典 · 买房全流程</td><td style="text-align:right;">19.9</td></tr>
+    <tr><td class="rowhead">分册二 单买</td><td>澳洲房产避坑宝典 · 贷款与避税</td><td style="text-align:right;">19.9</td></tr>
+    <tr><td class="rowhead">分册三 单买</td><td>澳洲房产避坑宝典 · 挑房与砍价</td><td style="text-align:right;">9.9</td></tr>
+    <tr><td class="rowhead">分册四 单买</td><td>澳洲房产避坑宝典 · 出租与管理</td><td style="text-align:right;">14.9</td></tr>
+    <tr class="sum"><td>单买合计</td><td>四册全部内容</td><td style="text-align:right;">64.6</td></tr>
+    <tr class="set"><td>任选 4 册</td><td>系列任意 4 册组合</td><td style="text-align:right;">49.0</td></tr>
+  </table>
+  <div class="price-hero">
+    <div class="ph-label">BUNDLE PRICE · 套装一口价</div>
+    <div class="big">AU$49 <small>/ 任选 4 册</small></div>
+    <div class="save">单买合计 AU$64.6 → 套装 AU$49，<b>省 AU$15.6（约 24%）</b></div>
+  </div>
+  <h3>套装适合谁</h3>
+  <ul class="plain">
+    <li><strong>周期覆盖两个以上阶段的人：</strong>比如海外买家（先分册二把贷款与税算清 → 再分册一学流程 → 再分册三看房出价），套装直接省出一册的钱。</li>
+    <li><strong>夫妻 / 合买搭档：</strong>一人主攻流程与税务，一人主攻验房与出租，四册正好分工。</li>
+    <li><strong>送准备买房的家人朋友：</strong>一套四册覆盖从研究到出租的完整周期，比单册更完整。</li>
+    <li><strong>长期投资者：</strong>买完仍要持有、出租、再配置——分册四的账本工具会反复用。</li>
+  </ul>
+  <h3>为什么拆成四册卖</h3>
+  <div class="box note">
+    <div class="bt">✂️ 按需购买，不为一页用不上的内容付钱</div>
+    <p>不是每个人都走完全程：澳洲本地公民买家用不上 FIRB 与附加印花税（分册二税务篇的大头）；还没看房的人用不上出租法规（分册四）；只想快速自检的人可能只需要分册三的清单。拆册是为了<strong>让每一册独立完整、按阶段付费</strong>；而如果你的阶段确实覆盖多个，套装把价格压回一册全书的量级。</p>
+  </div>
+  <div class="footnav"><span>澳洲房产避坑宝典系列</span><span>套装购买逻辑</span></div>
+</section>
+
+<!-- ============ 怎么买 CTA ============ -->
+<section class="page">
+  <div class="chapter-head">
+    <div class="no">HOW TO BUY</div>
+    <h2>怎么买 · 两步到手</h2>
+    <div class="desc">现在下单走微信通道，在线直付通道即将上线，上线后本页可直接付款自动发货。</div>
+  </div>
+  <div class="box" style="border:2px solid #c9a227; background:#fffdf5;">
+    <div class="bt" style="color:#a07d10;">🛒 微信下单 · 备注「宝典」</div>
+    <p><b>第 1 步</b>：加微信 <b style="color:#0f3057; font-size:17px;">LIGCLUB</b>（备注「宝典」）</p>
+    <p><b>第 2 步</b>：告诉客服要哪几册（如「套装」或「02+03」），微信 / PayPal / 银行转账后 10 分钟内收到文件，手机电脑都能看、可打印。</p>
+    <p style="color:#8a99a8; font-size:13.5px; margin-bottom:0;">所有册子一次性买断，含后续勘误更新；也可单买任意一册，价格见上方购买方式表。</p>
+  </div>
+</section>
+
+<!-- ============ 数据可信度 ============ -->
+<section class="page">
+  <div class="chapter-head">
+    <div class="no">DATA &amp; SOURCING</div>
+    <h2>数据可信度说明</h2>
+    <div class="desc">这套书的每一处关键数字都有出处——这是它与坊间传闻材料最大的区别。</div>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="v">2026-09-09</div><div class="k">全套数据核实基准日，每册封面与附录均标注</div></div>
+    <div class="stat"><div class="v">URL+日期</div><div class="k">关键数字旁标注公开来源与核实日期，可自行复核</div></div>
+    <div class="stat"><div class="v">VIC 主线</div><div class="k">以维州 / 墨尔本为主线，各州差异处标注「以所在州官方为准」</div></div>
+  </div>
+  <div class="box warn">
+    <div class="bt">⚠️ 时效提醒（务必阅读）</div>
+    <p>澳洲各州税费与租赁法规<strong>调整频繁</strong>：附加印花税率、FIRB 费用档位、FRCGW 预扣比例、租赁新规的过渡安排都可能变化。本系列引用的数字均已标注来源与核实日期（2026年9月9日），但<strong>任何一笔真实交易前，请一律以官方机构（SRO、Consumer Affairs Victoria、ATO、FIRB 等）与持牌专业人士的最新确认为准</strong>。</p>
+  </div>
+  <div class="disclaimer">
+    <div class="dt">⚖️ 免责声明（简版）</div>
+    <p><strong>本系列（含本销售页与四册分册）仅为一般性科普信息，不构成法律、税务、金融（信贷）建议或持牌专业意见。</strong>房产交易因人而异，各州法律与政策随时可能调整。签署任何合同、参加任何拍卖或做出任何投资决定之前，请咨询持牌律师（Solicitor）、过户师（Conveyancer）、税务代理或持牌房贷经纪。因依赖本系列内容而产生的任何损失，作者及相关方不承担责任。提及的第三方机构与网站仅为信息指引，不构成推荐或背书。完整免责声明见各分册尾页。</p>
+  </div>
+  <div class="footnav"><span>澳洲房产避坑宝典系列</span><span>数据与免责</span></div>
+</section>
+
+<!-- ============ GAP Index 免费测评（引流入口占位） ============ -->
+<section class="page">
+  <div class="chapter-head">
+    <div class="no">FREE ASSESSMENT</div>
+    <h2>下一步：GAP Index 免费测评</h2>
+    <div class="desc">读完分册之后，用 5 分钟定位你当前准备度的「缺口」（GAP）。</div>
+  </div>
+  <div class="cta-gap">
+    <div class="cta-t">GAP Index · 买房准备度免费测评</div>
+    <div class="cta-s">从「系统认知 / 税务预算 / 尽调谈判 / 持有规划」四个维度，定位你与「可以放心出价」之间的差距——并告诉你该重点读哪一册。</div>
+    <span class="cta-btn">开始免费测评</span>
+    <div class="cta-note">※ 本区块为引流入口占位：测评链接与入口文案待接入后替换此占位说明。</div>
+  </div>
+  <div class="box info">
+    <div class="bt">🔗 测评与本系列的关系</div>
+    <p>测评结果会指向四册中与你缺口最相关的内容：<strong>系统认知缺口 → 分册一；贷款与税务预算缺口 → 分册二；尽调谈判缺口 → 分册三；持有规划缺口 → 分册四</strong>。已购套装的读者可把测评当作四册的「阅读地图」。</p>
+  </div>
+  <div class="print-note">🖨️ 本页为系列总览与购买指南页，可单独打印留存；四册正文工具页均已做打印排版优化。</div>
+  <div class="footnav">
+    <span>澳洲房产避坑宝典系列 · AUSSIE PROPERTY · The New Migrant's Complete Guide to Buying Property in Australia</span>
+    <span>© 系列总览页 · 数据核实日 2026-09-09</span>
+  </div>
+</section>
+
+</body>
+</html>
