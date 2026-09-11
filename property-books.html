@@ -513,5 +513,38 @@ table.price .set td{background:#eef4fa; font-weight:800; color:var(--navy);}
   </div>
 </section>
 
+<script>
+(function(){
+  var BASE=16;
+  function calc(){
+    var r=1;
+    try{
+      var fs=parseFloat(getComputedStyle(document.documentElement).fontSize);
+      if(fs>0&&isFinite(fs)) r=Math.max(r,fs/BASE);
+      if(window.visualViewport&&window.visualViewport.scale){
+        var s=window.visualViewport.scale;
+        if(s>1&&isFinite(s)) r=Math.max(r,s);
+      }
+    }catch(e){}
+    return r;
+  }
+  function fit(){
+    var z=calc();
+    if(z>1.08){
+      document.body.style.zoom=(1/z).toFixed(4);
+    }else{
+      document.body.style.zoom='';
+    }
+  }
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',fit);
+  }else{fit();}
+  window.addEventListener('load',fit);
+  window.addEventListener('resize',fit);
+  if(window.visualViewport&&visualViewport.addEventListener){
+    visualViewport.addEventListener('resize',fit);
+  }
+})();
+</script>
 </body>
 </html>
