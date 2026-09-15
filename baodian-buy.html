@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>澳洲买房避坑宝典·四册套装（前30份六折）| LIG CLUB 澳洲避坑指南</title>
+<meta name="description" content="澳洲买房避坑宝典四册套装：合同、砍价、贷款、出租全流程。原价AU$49，前30份六折AU$29.4，扫码付款当天发全套PDF。">
+<style>
+  :root{
+    --bg:#0a0a0c;
+    --bg-soft:#131318;
+    --card:#16161c;
+    --line:rgba(212,175,55,.28);
+    --gold:#d4af37;
+    --gold-hi:#f3dc8e;
+    --gold-deep:#a8861f;
+    --ink:#f5f1e4;
+    --ink-dim:#b9b3a0;
+    --danger:#e08c8c;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+    line-height:1.65;
+    overflow-x:hidden;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding:0 18px}
+  a{color:var(--gold-hi)}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .brand{
+    text-align:center;
+    padding:18px 0 6px;
+    color:var(--gold);
+    letter-spacing:.18em;
+    font-size:13px;
+    font-weight:600;
+  }
+  .brand::after{content:"";display:block;width:56px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:10px auto 0}
+  /* Hero */
+  .hero{text-align:center;padding:26px 0 8px}
+  .hero h1{
+    font-size:clamp(28px,7.4vw,40px);
+    line-height:1.25;
+    letter-spacing:.04em;
+    background:linear-gradient(160deg,var(--gold-hi) 10%,var(--gold) 55%,var(--gold-deep) 95%);
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:var(--gold);
+  }
+  .hero .sub{margin-top:10px;color:var(--ink-dim);font-size:15px;letter-spacing:.3em}
+  .badge{
+    display:inline-block;
+    margin-top:18px;
+    padding:6px 14px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    color:var(--gold-hi);
+    font-size:13px;
+    letter-spacing:.12em;
+  }
+  /* 价格块 */
+  .price-card{
+    margin:22px 0 8px;
+    padding:26px 18px 22px;
+    background:linear-gradient(180deg,#191920,#111116);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    text-align:center;
+  }
+  .price-old{
+    color:var(--ink-dim);
+    font-size:16px;
+    text-decoration:line-through;
+    text-decoration-color:rgba(224,140,140,.85);
+    text-decoration-thickness:2px;
+  }
+  .price-now{
+    margin-top:6px;
+    font-size:clamp(44px,13vw,64px);
+    font-weight:800;
+    letter-spacing:.01em;
+    background:linear-gradient(160deg,var(--gold-hi) 5%,var(--gold) 60%,var(--gold-deep) 100%);
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:var(--gold);
+    line-height:1.1;
+  }
+  .price-note{margin-top:8px;color:var(--ink-dim);font-size:13.5px}
+  .price-note b{color:var(--gold-hi);font-weight:600}
+  /* 通用 section */
+  section{padding:26px 0 6px}
+  h2{
+    font-size:19px;
+    color:var(--gold-hi);
+    letter-spacing:.06em;
+    text-align:center;
+    margin-bottom:16px;
+    font-weight:700;
+  }
+  h2::after{content:"";display:block;width:40px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:10px auto 0}
+  /* 四册 */
+  .book{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+    background:var(--card);
+    border:1px solid rgba(212,175,55,.16);
+    border-radius:var(--radius);
+    padding:16px;
+    margin-bottom:12px;
+  }
+  .book .no{
+    flex:0 0 auto;
+    width:34px;height:34px;
+    border-radius:50%;
+    border:1px solid var(--gold);
+    color:var(--gold);
+    font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+    font-size:15px;
+  }
+  .book h3{font-size:16.5px;color:var(--ink);font-weight:700;letter-spacing:.02em}
+  .book h3 .was{font-weight:400;font-size:12.5px;color:var(--ink-dim);margin-left:8px;text-decoration:line-through}
+  .book p{margin-top:4px;font-size:14px;color:var(--ink-dim)}
+  .bundle-save{
+    text-align:center;color:var(--gold-hi);font-size:14px;margin-top:4px;
+  }
+  /* 购买步骤 */
+  .steps{list-style:none;counter-reset:s}
+  .steps li{
+    counter-increment:s;
+    position:relative;
+    padding:14px 16px 14px 58px;
+    background:var(--card);
+    border:1px solid rgba(212,175,55,.16);
+    border-radius:var(--radius);
+    margin-bottom:10px;
+    font-size:14.5px;
+  }
+  .steps li::before{
+    content:counter(s);
+    position:absolute;left:16px;top:50%;
+    transform:translateY(-50%);
+    width:28px;height:28px;
+    border-radius:50%;
+    background:linear-gradient(160deg,var(--gold-hi),var(--gold-deep));
+    color:#141410;
+    font-weight:800;
+    display:flex;align-items:center;justify-content:center;
+    font-size:14px;
+  }
+  .steps b{color:var(--gold-hi)}
+  /* 收款码 */
+  .qr-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .qr-box{
+    background:var(--card);
+    border:1px solid rgba(212,175,55,.16);
+    border-radius:var(--radius);
+    padding:16px 12px;
+    text-align:center;
+  }
+  .qr-box img{width:100%;max-width:230px;height:auto;border-radius:8px;display:block;margin:0 auto}
+  .qr-box .name{margin-top:10px;font-size:15px;font-weight:700;color:var(--gold-hi);letter-spacing:.08em}
+  .qr-box .amt{margin-top:2px;font-size:12.5px;color:var(--ink-dim)}
+  .pay-tip{
+    margin-top:14px;
+    padding:12px 14px;
+    border:1px dashed var(--line);
+    border-radius:10px;
+    color:var(--ink-dim);
+    font-size:13.5px;
+    text-align:center;
+  }
+  .pay-tip b{color:var(--gold-hi)}
+  /* FAQ */
+  details{
+    background:var(--card);
+    border:1px solid rgba(212,175,55,.16);
+    border-radius:var(--radius);
+    margin-bottom:10px;
+    padding:2px 0;
+  }
+  summary{
+    cursor:pointer;
+    padding:14px 16px;
+    font-size:14.5px;
+    font-weight:600;
+    color:var(--ink);
+    list-style:none;
+    position:relative;
+    padding-right:44px;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::after{
+    content:"+";
+    position:absolute;right:18px;top:50%;
+    transform:translateY(-50%);
+    color:var(--gold);
+    font-size:20px;font-weight:400;
+    transition:transform .2s ease;
+  }
+  details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+  details .a{padding:0 16px 14px;color:var(--ink-dim);font-size:13.5px}
+  /* Footer */
+  footer{
+    margin-top:30px;
+    padding:22px 0 30px;
+    border-top:1px solid rgba(212,175,55,.14);
+    text-align:center;
+    color:#6f6a5c;
+    font-size:12px;
+    line-height:1.8;
+  }
+  footer .fb{color:#8d8776}
+  @media (max-width:420px){
+    .qr-grid{grid-template-columns:1fr}
+    .qr-box img{max-width:200px}
+  }
+  @media print{
+    body{background:#fff;color:#111}
+    .price-card,.book,.qr-box,details,.steps li{border-color:#bbb;background:#fff}
+    h1,h2,h3{color:#000;-webkit-text-fill-color:initial}
+    .price-now{color:#000;-webkit-text-fill-color:initial}
+    footer{color:#555}
+  }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <p class="brand">LIG CLUB · 澳洲避坑指南</p>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>澳洲买房避坑宝典<br>四册套装</h1>
+    <p class="sub">合同 · 砍价 · 贷款 · 出租</p>
+    <span class="badge">限量优惠 · 前 30 份</span>
+  </div>
+
+  <section aria-labelledby="price-h" class="price-card" id="price">
+    <h2 id="price-h" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">价格</h2>
+    <p class="price-old">原价 AU$49</p>
+    <p class="price-now" aria-label="限时六折价29.4澳元">AU$29.4</p>
+    <p class="price-note"><b>前 30 份</b> 享六折 · 比单册合计省 <b>AU$35+</b></p>
+  </section>
+
+  <section aria-labelledby="books-h">
+    <h2 id="books-h">套装里有什么</h2>
+
+    <article class="book">
+      <span class="no" aria-hidden="true">1</span>
+      <div>
+        <h3>《买房全流程》<span class="was">AU$19.99</span></h3>
+        <p>从看房到交割每一步干什么：预算、挑选中介、看房、出价、冷静期、交割检查，一册走完不迷路。</p>
+      </div>
+    </article>
+
+    <article class="book">
+      <span class="no" aria-hidden="true">2</span>
+      <div>
+        <h3>《贷款与避税》<span class="was">AU$19.99</span></h3>
+        <p>贷款怎么批得快、利率怎么谈、印花税怎么算、持有成本怎么省，把该留的钱留住。</p>
+      </div>
+    </article>
+
+    <article class="book">
+      <span class="no" aria-hidden="true">3</span>
+      <div>
+        <h3>《挑房与砍价》<span class="was">AU$9.99</span></h3>
+        <p>问题房一眼识别：结构、渗水、虫害。拍卖与私售两种局怎么出价、怎么用验房报告砍下真金白银。</p>
+      </div>
+    </article>
+
+    <article class="book">
+      <span class="no" aria-hidden="true">4</span>
+      <div>
+        <h3>《出租与管理》<span class="was">AU$14.99</span></h3>
+        <p>租客怎么筛、合同怎么签、房东义务有哪些雷区，收租安心不打官司。</p>
+      </div>
+    </article>
+
+    <p class="bundle-save">单册合计 AU$64.96 → 套装六折只要 <b>AU$29.4</b></p>
+  </section>
+
+  <section aria-labelledby="how-h">
+    <h2 id="how-h">三步拿到全套</h2>
+    <ol class="steps">
+      <li>扫码支付 <b>AU$29.4</b>（支付宝或微信均可）</li>
+      <li>付款时在<b>备注里留下你的邮箱</b>（或加好友备注）</li>
+      <li>全套 <b>4 册 PDF</b> 发到你邮箱 —— <b>当天交付</b></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="qr-h">
+    <h2 id="qr-h">扫码付款</h2>
+    <div class="qr-grid">
+      <figure class="qr-box">
+        <img src="https://frankyligclub.github.io/qr/alipay.jpg" alt="支付宝收款二维码" width="230" height="230" loading="lazy">
+        <figcaption>
+          <p class="name">支付宝</p>
+          <p class="amt">支付 AU$29.4 · 备注邮箱</p>
+        </figcaption>
+      </figure>
+      <figure class="qr-box">
+        <img src="https://frankyligclub.github.io/qr/wechat.png" alt="微信收款二维码" width="230" height="230" loading="lazy">
+        <figcaption>
+          <p class="name">微信</p>
+          <p class="amt">支付 AU$29.4 · 备注邮箱</p>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="pay-tip">付款备注邮箱后，全套 PDF <b>当天发出</b>；如有问题可在公众号或主页私信找到我们。</p>
+  </section>
+
+  <section aria-labelledby="faq-h">
+    <h2 id="faq-h">常见问题</h2>
+    <details>
+      <summary>宝典是中文还是英文？</summary>
+      <p class="a">中文撰写，澳洲关键术语保留英文原词（如 cooling-off、strata、pest inspection），看得懂也用得上。</p>
+    </details>
+    <details>
+      <summary>多久能收到？什么格式？</summary>
+      <p class="a">付款备注邮箱后当天发送，最迟 24 小时内；全套 4 册 PDF，手机电脑都能看，可自行打印。</p>
+    </details>
+    <details>
+      <summary>可以单买一本吗？</summary>
+      <p class="a">可以，单册按原价购买；六折优惠只限四册套装。</p>
+    </details>
+    <details>
+      <summary>适合哪个州？</summary>
+      <p class="a">全澳洲通用，流程与底层逻辑一致；案例和价格区间以维州为主，各州差异章节单独说明。</p>
+    </details>
+    <details>
+      <summary>可以退款吗？</summary>
+      <p class="a">虚拟资料一经发送不退款，请确认需求后下单。</p>
+    </details>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p class="fb">LIG CLUB · 澳洲避坑指南</p>
+  <p>本页内容为一般性信息分享，不构成法律、税务或财务建议；具体决策请咨询持牌专业人士。</p>
+</footer>
+</body>
+</html>
